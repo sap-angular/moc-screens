@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewClaimComponent } from './new-claim/new-claim.component';
 import { VehicleComponent } from './new-claim/vehicle/vehicle.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { VehicleComponent } from './new-claim/vehicle/vehicle.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
